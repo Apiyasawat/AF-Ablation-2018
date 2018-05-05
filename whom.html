@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<title>AF Ablation 2018, mechanisms, techniques, complications, trials, and guidelines</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="myStyle.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style>
+.canvas {
+    background-color: white;
+    height: 85vh;
+    border: 0.4em black solid;
+    margin: 4em 2em 2em;
+}
+
+td {
+    border-right: 0.05em lightgray solid;
+}
+tr {
+    border: 0.1em lightgray solid;
+}
+
+.slideContainer {
+    position: relative;
+    height: 90vh;
+    overflow: auto;
+    border: 0.2em black solid;
+    margin: 1em;
+    vertical-align: middle;
+}
+.slide {
+  padding: 1em;
+  display: none;
+  vertical-align: middle;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40vh;
+  width: auto;
+  padding: 8px;
+  color: #858484;
+  font-weight: bold;
+  font-size: 2em;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  margin: 0 2px;
+  vertical-align: bottom;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+ol {
+    letter-spacing: 1px;
+}
+
+ol li {
+    padding: 0.2em;
+    border: 0.05em lightgrey solid;
+}
+
+
+</style>
+
+
+<body>
+<!--Topmenu-->
+<div class="w3-top menu">
+    <div class="w3-row">
+        <div class="w3-col s3 menuItem">
+                <a href="index.html" class="w3-button w3-block"><i class="fa fa-home"
+                    style="font-size: 1.5em"></i></a>       
+        </div>
+        <div class="w3-col s3 menuItem">
+                <a href="how.html" class="w3-button w3-block">HOW</a>            
+        </div>
+        <div class="w3-col s3 menuItem">
+                <a href="why.html" class="w3-button w3-block">WHY</a>            
+        </div>
+        <div class="w3-col s3 menuItem">
+            <a href="whom.html" class="w3-button w3-block">WHOM</a>            
+    </div>
+    </div>
+</div>
+
+<!--keyword-->
+<div class="canvas">
+    <div class="w3-display-middle w3-center w3-jumbo"
+    style="letter-spacing: 5px">
+        <b>#SYMPTOMATIC</b>
+    </div>
+</div>
+
+<!--main indications-->
+<div class="w3-container block">
+    <div class="w3-panel w3-center w3-card w3-mobile" 
+    style="background:  #555555; color:white">
+    <h1>CATHETER ABLATION OF AF</h1>
+    <h1>According to 2016 ESC Guidelines</h1>
+    <h4>...which have yet to include the "sure-to-change-the-guidelines" 
+        data from last year trials.  </h4>
+    </div>
+    <div class="w3-responsive">
+    <table class="w3-table w3-hoverable w3-padding-large  
+    w3-xlarge w3-centered" >
+    <tr class="w3-hover-yellow">
+        <td>Symptomatic Paroxysmal</td>
+        <td>First Line</td>
+        <td>IIa</td>
+    </tr>
+    <tr class="w3-hover-green">
+        <td>Symptomatic Paroxysmal</td>
+        <td>Second Line</td>
+        <td>I</td>
+    </tr>
+    <tr class="w3-hover-yellow">
+        <td>Symptomatic Persistent</td>
+        <td>Second Line</td>
+        <td>IIa</td>
+        </tr>
+    <tr class="w3-hover-yellow">
+            <td>Symptomatic Long-persistent</td>
+            <td>Second Line</td>
+            <td>IIa (IIb in 2014 ACC)</td>
+        </tr>
+    <tr class="w3-hover-yellow">
+            <td>Symptomatic HFrEF</td>
+            <td>suspected tachycardia induced cardiomyopathy</td>
+            <td>IIa</td>
+            </tr>
+    <tr class="w3-hover-yellow">
+            <td>AF related tachycardia</td>
+            <td>to avoid pacemaker implantation</td>
+            <td>IIa</td>
+            </tr>
+</table></div>
+</div>
+
+<!--class III-->
+<div class="w3-row-padding block" 
+style="background: linear-gradient(to bottom, #fc553d 30%, #cc0000 100%); color: white">
+    <div class="w3-container w3-padding w3-cell w3-cell-middle w3-mobile">
+        <img src="figures/alert icon.png" style="width: 80%">
+    </div>
+    <div class="w3-container w3-padding w3-cell w3-cell-middle w3-mobile">
+        <span style="font-size: 3em; font-weight: bold">DON'T DO THIS!</span>
+        <h2>Class III indications from 2014 ACC guidelines</h2>
+        <ul class="w3-ul w3-hoverable w3-light-grey w3-card-2 w3-xxlarge w3-padding">
+            <li>NO ablation in patients who 
+                <b style="letter-spacing: 2px">CANNOT TOLERATE ANTICOAGULATION.</b></li>
+            <li>NO ablation if you only just want to 
+                <b style="letter-spacing: 2px">AVOID ANTICOAGULATION.</b></li>
+        </ul>
+    </div>
+</div>
+
+<!--AFL ablation-->
+<div class="w3-row-padding block" style="border: 0.1em black solid">
+    <div class="w3-display-container w3-center" style="height: 75vh; overflow: hidden;">
+        <img src="figures/AFL EGM.JPG" 
+        style="width: 100%; opacity: 0.3;">
+        <div class="w3-display-middle orangeTxt">
+        <span style="font-size: 70px; font-weight: bold;letter-spacing: 4px">
+            "COMMON" FLUTTER</span>
+        <h1 style="color: black">Ablate if documented or occurred during AF ablation (IIa)</h1>
+    </div></div>
+</div>
+
+<!--avn ablation-->
+<div class="w3-row-padding block darkG" style="margin-bottom: 0em">
+    
+    <div class="w3-container w3-padding w3-half w3-mobile">
+        <h1 class="w3-panel w3-card orangebg">AV NODAL ABLATION</h1>
+        <div style="line-height: 1.2; padding: 0.5em">
+        <h2>last resource for those who were UNREPONSIVE or
+            INTOLERANT to INTENSIVE rate/rhythm control (IIa).
+        </h2><br>
+        <h2>Remember that the patient will be pacemaker dependent.</h2><br>
+        <h2>Consider CRT, rather than a simple pacemaker, in the 
+            patient with impaired LVEF.</h2>
+        <span class="ref">
+            Geelen et al. PACE 1997;20:343-348 
+            and Wang et al. Heart Rhythm 2013;10:696–701. 
+        </span></div>
+        </div>
+
+    <div class="w3-container w3-half w3-mobile">
+            <img src="figures/AVN abl tdp.png" style="width: 100%">
+        </div>
+    </div>
+    <div class="w3-container w3-padding w3-center w3-topbar darkG w3-mobile" style="margin-top: 0em">
+    <h1 style="color: #fc553d">IMPORTANT </h1> 
+    <div class="w3-container w3-padding w3-xlarge">
+    <div class="w3-border-bottom" style="color: white;">cardiac death may occur after the AV nodal ablation due to abrupt changes 
+        in heart rate, sympathetic tone, and potassium channel function.  </div>
+    <div>To reduce SCD, Set the pacing rate at 90 bpm during the 1st month 
+            with a monthly decrement of 10 beats/min.</div>
+        </div>
+    </div>
+
+    
+<!--Quiz-->
+<div class="w3-container w3-padding block">
+    <div style="text-align: center"><h1>QUIZZES</h1></div>
+    <h5 style="text-align: center">Hutchinson MD. IBHRE Board Review Course 2012 and 
+        2017 ABIM update in clinical cardiac electrophysiology.</h5>
+</div>   
+<div class="slideContainer">
+<!--Q1-->
+<div class="slide">
+    <div class="w3-container w3-xlarge">
+        A 67-year-old man who has hypertension, complete heart block, and a dual-chamber pacemaker comes to the clinic for routine visit. 
+        He feels well and reports no new problems. Current medications are metoprolol, lisinopril, and HCTZ. 
+        Physical examination is unremarkable, including a healthy appearing pacemaker pocket. 
+        Device interrogation shows acceptable thresholds, impedances, and electrogram features and two episodes of atrial fibrillation (lasting 25 and 33 hours respectively) that occurred three months apart. 
+        Which of the following is most appropriate at this time?
+       
+    <ol type="a" >
+        <li>Add ASA 325 mg OD.</li>
+        <li>Order 2D-Echocardiography.</li>
+        <li>Add Rivaroxaban 20 mg OD.</li>
+        <li>Schedule an RF ablation of AF.</li>
+        <li>Schedule a follow-up in 6 months.</li>
+    </ol>
+    <div class="w3-panel"
+        onclick="showAnswer(0)">
+        <button class="w3-button"><h4>Show Answer</h4></button>
+        <div id="answer0" class="w3-border" style="visibility: hidden;">
+        <h4>
+            The Answer is <b>C</b>
+        </h4>
+        <h5>OAC should be initated base on the device detected AF episodes
+            which were >24hr, and the stroke risks. 
+        </h5>
+        <h5>The patient is asymptomatic from AF, so RF ablation is not indicated.</h5>
+        </div>
+    </div>
+    </div>
+</div>
+<!--Q2-->
+<div class="slide">
+    <div class="w3-container w3-xlarge">
+            A 50-year-old man is scheduled to undergo radiofrequency catheter ablation today. 
+            He has frequent episodes of paroxysmal AF and a history of 2 episodes of typical-appearing atrial flutter. 
+            His current medications are bisoprolol and dabigatran 150 mg BID. 
+            He was told to stop taking dabigatran 24 hours before the ablation procedure. However, he forgot the instructions and took his evening dose of rivaroxaban yesterday. 
+            Right now (18 hours after the last dabigatran dose), the patient is in the procedure room, but he has not been "prepped," draped, or sedated yet. His electrocardiogram shows sinus rhythm. 
+            Which of the following is the most appropriate strategy for this patient?
+            
+        
+    <ol type="a" >
+        <li>Proceed with right-sided atrial flutter ablation only.</li>
+        <li>Proceed with AF and atrial flutter ablation.</li>
+        <li>Administer fresh frozen plasma and proceed with AF and atrial flutter ablation.</li>
+        <li>Reschedule the procedure.</li>
+    </ol>
+    <div class="w3-panel"
+        onclick="showAnswer(1)">
+        <button class="w3-button"><h4>Show Answer</h4></button>
+        <div id="answer1" class="w3-border" style="visibility: hidden;">
+        <h4>
+            The Answer is <b>B</b>
+        </h4>
+        <h5>Current evidence supported the safety and superiority of
+            uninterupted OAC; including NOACs, for undergoing catheter ablation of AF. 
+        </h5>
+        </div>
+    </div>
+    </div></div>
+
+<!--Q3-->
+<div class="slide">
+    <div class="w3-container w3-xlarge">
+            A 48 yo M calls your office 10 days after an
+            uncomplicated Afib ablation complaining of a recent
+            onset of fevers, mild chest pain, and difficulty
+            swallowing. What do you recommend?
+    
+    <ol type="a" >
+        <li>Routine office visit tomorrow.</li>
+        <li>Hemoculture and empiric antibiotic.</li>
+        <li>NSAID and close f/u.</li>
+        <li>Stat CT chest.</li>
+        <li>Consult GI.</li>
+    </ol>
+    <div class="w3-panel"
+        onclick="showAnswer(2)">
+        <button class="w3-button"><h4>Show Answer</h4></button>
+        <div id="answer2" class="w3-border" style="visibility: hidden;">
+        <h4>
+            The Answer is <b>C</b>
+        </h4>
+        <h5>The patient had classic Triads of atrioesophageal (AE) fistula (fever, chest pain
+            , and dysphagia) that occurred 1-4wks after AF ablation. AE fistula posts 
+            a high mortality rate (approximately 50%). Urgent diagnosis and aggresive treatment 
+            is highly recommended.
+        </h5>
+        </div>
+    </div>
+        </div></div>
+
+<!--Q4-->
+<div class="slide">
+    <div class="w3-container w3-xlarge">
+            A 47-year-old woman has had paroxysmal atrial fibrillation (AF) for 2 years. 
+            She has received treatment in the emergency department for two separate 
+            episodes of AF that lasted up to 12 hours, and she underwent direct-current 
+            cardioversion two years ago, as well as one month ago. Prior evaluation 
+            disclosed a normal thyroid function, a normal echocardiogram, and normal nuclear perfusion imaging. 
+            Drug therapy with flecainide, 100 mg BID, and metoprolol 25 mg twice daily, was started. 
+            Her AF episodes improved until 2 months ago, when she experienced a persistent episode of AF. 
+            She underwent direct-current cardioversion for the second time, and her flecainide 
+            dosage was increased to 150 mg twice daily. Despite this action, she now has 
+            symptomatic AF episodes (rate of 90 beats per minute) up to four times each month. 
+            In addition to discontinuing flecainide, which of the following should you do now?            
+    <ol type="a" >
+        <li>Start amiodarone.</li>
+        <li>Increase dosage of metoprolol.</li>
+        <li>Add propafenone for prn use. </li>
+        <li>Recommend catheter ablation.</li>
+       
+    </ol>
+    <div class="w3-panel"
+        onclick="showAnswer(3)">
+        <button class="w3-button"><h4>Show Answer</h4></button>
+        <div id="answer3" class="w3-border" style="visibility: hidden;">
+        <h4>
+            The Answer is <b>D</b>
+        </h4>
+        <h5>Symptomatic paroxysmal AF, failed flecainide --> catheter ablation is indicated as 
+            class I indication.
+        </h5>
+        <h5>Her symptoms were too frequent for prn strategy.</h5>
+        </div>
+    </div>
+        </div></div>
+
+
+<!-- arrows/dots/circles -->
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+
+</div>
+
+<!--conclusions-->
+<div class="w3-display-container block">
+    <img src="figures/EKG.jpg" style="width: 100%;opacity: 0.3">
+    <div class="w3-display-middle w3-card-4 w3-padding darkG" >
+        <div class="w3-bar w3-border-bottom w3-xxxlarge orangeTxt w3-border-light-grey"
+        style="font-weight: 900;">CONCLUSIONS</div>
+        <ul class="w3-ul w3-xxlarge" style="font-weight: 400; text-align: justify; 
+        color: white;"> 
+        <li>Goals of catheter ablation for AF are to eliminate the triggers
+            and modify the arrhythmogenic substrates. </li>
+        <li>Guidelines recommended catheter ablation for SYMPTOMATIC, 
+            paroxysmal or persistent AF.  </li>
+    </ul>
+
+</div>
+</div>
+
+<div class="w3-bottom">
+    <div class="w3-bar footer">
+        atrial fibrillation ablation 2018 - https://apiyasawat.github.io/main/
+    </div>            
+</div>
+
+<script>
+
+//slideshow
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+  
+}
+
+//show answers in the quizzes
+function showAnswer(a) {
+    question = document.getElementById("answer"+a);
+    question.style.visibility = "visible";
+}
+
+</script>
+
+
+
+</body>
+</html>
