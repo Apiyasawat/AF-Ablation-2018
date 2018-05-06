@@ -143,10 +143,7 @@
       if (event.keyCode===13) {autoFwd(fwdCount)};
     }) 
   //touch event
-  document.getElementById("wheel").addEventListener("touchstart", function(event){
-      event.preventDefault();
-      if (event.keyCode===13) {autoFwd(fwdCount)};
-    }) 
+  document.getElementById("wheel").addEventListener("touchstart", autoFwd(fwdCount));
 
   
   //functions
