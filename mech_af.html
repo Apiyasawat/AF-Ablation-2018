@@ -19,9 +19,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
-    <style>
     
-    </style>
 
 
 <!--Topmenu-->
@@ -43,8 +41,11 @@
     </div>
 </div>
 
+
+
 <!--PV foci-->
-<div class="w3-cell-row block">
+<div class="w3-cell-row block" onclick="pointer()">
+    
     <div class="w3-container w3-cell w3-cell-middle w3-padding-32 w3-mobile w3-light-grey">
         <img src="figures/PVSleeves.png" style="max-width: 33vw;">
     </div>
@@ -61,13 +62,13 @@
     <span class="ref">Haïssaguerre, M. NEJM 1998;339:659-66, Nathan, H. Circulation 1966;34;412-422, and 2016 ESC Guidelines for the management of atrial
             fibrillation.
     </span></div>
-    
+    <span class="pointer" style="display: none"></span>
     
 </div>
 
 <!--PACs trigger AF EGM-->
 <div class="w3-container w3-padding block" style="border: #fc553d 0.3em solid; margin-left:0.5em;
-margin-right: 0.5em">
+margin-right: 0.5em" onclick="pointer()">
     <div class="w3-cell-row w3-padding" >
     <div class="w3-container w3-cell w3-cell-middle w3-padding w3-mobile">
         <img src="figures/Frequent PACs EGM.JPG" style="width: 100%;">
@@ -82,11 +83,11 @@ margin-right: 0.5em">
             </div>
         </div>
     </div>
-    
+    <span class="pointer" style="display: none"></span>    
 </div>
 
 <!--e Remodelling-->
-<div class="w3-cell-row block">
+<div class="w3-cell-row block" onclick="pointer()">
     <div class="w3-container w3-cell w3-mobile" 
     style="background-color: skyblue"> 
         <h1 class="w3-card orangebg" style="text-align: right;padding: 0 0.5em 0 0;margin-top: 15%">
@@ -99,10 +100,11 @@ margin-right: 0.5em">
     <div class="w3-container w3-cell w3-cell-middle w3-mobile">
         <img src="figures/Electrical Remodelling.jpg" style="width: 100%;">
     </div>
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--cracks in the wall-->
-<div class="w3-cell-row block">
+<div class="w3-cell-row block" onclick="pointer()">
     <div class="w3-container w3-cell w3-cell-middle w3-mobile">
             <img src="figures/cracksinatrium.png" style="width: 100%;">
         </div>
@@ -117,11 +119,12 @@ margin-right: 0.5em">
             and perpetuation of AF.</h3>
         <span class="ref">Allesie et al. Circ Arrhythm Electrophysiol 2010;3:606-615 & 2016 ESC Guidelines for AF.</p>
     </div>
-    
-    </div>
+    <span class="pointer" style="display: none"></span>    
+</div>
 
 <!--ANS-->
-<div class="w3-panel block" style="border: #fc553d 0.4em solid; margin: 5em 0.5em 1em 0.5em">
+<div class="w3-panel block" onclick="pointer()"
+style="border: #fc553d 0.4em solid; margin: 5em 0.5em 1em 0.5em">
         <div class="w3-container w3-cell w3-cell-middle w3-border-right w3-mobile">
                 <img src="figures/ANS.png" style="width: 100%">
             </div>
@@ -136,7 +139,9 @@ margin-right: 0.5em">
                     Atrial Fibrillation.
                 </p>  
         </div>
+        <span class="pointer" style="display: none"></span>
     </div>
+    
 
 <!--back button-->
 <div class="w3-content w3-center w3-padding" style="margin-top: 3em; margin-bottom: 2em"> 
@@ -149,6 +154,26 @@ margin-right: 0.5em">
         atrial fibrillation ablation 2018 - <a href="https://apiyasawat.github.io/main/">https://apiyasawat.github.io/main/</a>
     </div>            
 </div>
+
+<script>
+    window.addEventListener("keydown", function(event) {
+        event.preventDefault();
+        if (event.keyCode===32) {
+        var p = document.getElementsByClassName("pointer");
+        p[0].style.display = "none";}
+    })
+    function pointer() {
+    var x = event.clientX;
+    var y = event.clientY;
+    var p = document.getElementsByClassName("pointer");
+    p[0].style.display = "inline";
+    p[0].style.left = x+"px"; 
+    p[0].style.top = y+"px";
+    
+}
+</script>
+
+
 
 </body>
 </html>
