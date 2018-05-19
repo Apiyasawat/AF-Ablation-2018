@@ -56,6 +56,7 @@ h2,h3 {
     border-right: lightgrey 0.1em dotted;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    font-size: 1em;
 }
 
 .block {
