@@ -40,7 +40,8 @@
 </div>
 
 <!--PVI-->
-<div class="w3-cell-row block" style="margin: 5em 0 0em 0; padding-bottom: 0")>
+<div class="w3-cell-row block" onclick="pointer()"
+style="margin: 5em 0 0em 0; padding-bottom: 0")>
     
     <div class="w3-container w3-cell w3-cell-middle w3-white w3-mobile"
         style="padding: 0; border-bottom: #fc553d 0.3em solid; margin-bottom: 0">
@@ -50,6 +51,7 @@
     style="padding: 0; border-bottom: #fc553d 0.3em solid; margin-bottom: 0">
         <img src="figures/PV isolation w EGM.png" style="width: 100%;">
     </div>
+    <span class="pointer" style="display: none"></span>
 </div>
     <div class="w3-bar w3-center w3-mobile">
         <div class="w3-large" style="margin-top: 0;color: white; letter-spacing: 3px;
@@ -68,7 +70,7 @@
 
 <!--lines-->
 <div class="w3-panel block" style="padding: 0em 0 1em 0;margin: 5em 1em 6em 1em;
-background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
+background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)" onclick="pointer()">
     <div class="w3-container w3-cell w3-cell-middle w3-mobile">
         <img src="figures/PVILines.jpg" style="width: 100%">
     </div>
@@ -79,10 +81,11 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
             mitral annulus line;</h3> <p style="line-height: 0.8"></p>
         <h2 style="font-weight: 900">Use the same concept as Cox-Maze procedure.</h2></div>     
     </div>
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--CFAE-->
-<div class="w3-panel w3-padding-16 block green">
+<div class="w3-panel w3-padding-16 block green" onclick="pointer()">
     <div class="w3-container w3-padding w3-cell w3-cell-middle w3-mobile">
         <div class="w3-card-4 w3-xxxlarge w3-white w3-opacity" 
         style="margin-right: -1em; text-align: right; font-weight: 900">
@@ -96,10 +99,12 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
     <div class="w3-container w3-cell w3-cell-middle w3-mobile">
         <img src="figures/CAFE.png" style="width: 100%">
     </div>
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--Cryo-->
-<div class="w3-panel w3-black block" style="padding: 0.5em 0 0 0; margin-bottom: 0.1em">
+<div class="w3-panel w3-black block" onclick="pointer()"
+style="padding: 0.5em 0 0 0; margin-bottom: 0.1em">
 
     <div class="w3-quarter w3-center w3-mobile">
         <img src="figures/CryoBG.jpg" style="width: 80%; height: auto">
@@ -116,10 +121,10 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
         <p class="ref" style="text-align: left">Packer et al. STOP AF. J Am Coll Cardiol 2013;61:1713–23.
             </p> 
     </div>
-    
+    <span class="pointer" style="display: none"></span>
 </div>   
 
-<div class="w3-row w3-black block" style="margin-top: 0px" >
+<div class="w3-row w3-black block" style="margin-top: 0px" onclick="pointer()" >
     <div class="w3-third w3-center w3-padding w3-mobile">
         <video autoplay loop style="width: 90%;">
             <source src="figures/CryoBalloon2.mp4" type="video/mp4">
@@ -133,11 +138,11 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
             Venogram of RUPV before and during CRYOBALLOON application.
         </h2>
     </div>
-    
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--technic compararisons-->
-<div class="w3-row-padding block">
+<div class="w3-row-padding block" onclick="pointer()">
     <h1 class="w3-bar w3-border w3-center green"  style="margin-bottom: 0">
         WHICH TECHNIQUES REIGN SUPREME?
     </h1>
@@ -162,11 +167,11 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
     <div class="w3-container w3-cell w3-padding green w3-mobile">
         <img src="figures/StarAFII.png" style="width: 100%; height: auto">
     </div>
-
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--tools-->
-<div class="w3-row-padding block w3-border">
+<div class="w3-row-padding block w3-border" onclick="pointer()">
     <div class="w3-content w3-center">
         <h1>TOOLS AND TECHNOLOGY</h1></div>
     <div class="w3-container w3-twothird w3-padding w3-mobile">
@@ -209,11 +214,11 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
                 </div>
             </div>
         </div>
-    
+        <span class="pointer" style="display: none"></span>    
 </div>
 
 <!--anticoagulation periprocedure-->
-<div class="w3-row-padding block">
+<div class="w3-row-padding block" onclick="pointer()">
         <div class="w3-panel w3-center greenD" >
         <h1>Periprocedural Anticoagulation</h1>
         <p id="ref">2014 ACC guidelines & 2016 ESC guidelines for AF.</p>
@@ -259,16 +264,17 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
                 </p>
             </div>
         </div>
+        <span class="pointer" style="display: none"></span>
     </div>
     
 <!--complications-->
-<div class="w3-row-padding darkG block" style="margin-bottom: 0">
+<div class="w3-row-padding darkG block" style="margin-bottom: 0" onclick="pointer()">
     <div class="w3-panel w3-card-4 w3-center orangeTxt w3-xxxlarge" style="font-weight: 900">
         COMPLICATIONS
     </div>
     <div class="w3-card w3-cell w3-padding w3-mobile">
         <h1  style="color: #db6f6b">Life-threatening Complications</h1>
-        <ul class="w3-ul w3-hoverable w3-hover-dark-grey"><h4>
+        <ul class="w3-ul"><h4>
             <li>Death: <0.2%</li>
             <li>Esophageal Injury: <0.5%</li>
             <li>Stroke: <1%</li>
@@ -277,7 +283,7 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
     </div>
     <div class="w3-card w3-cell w3-padding w3-mobile">
         <h1  style="color:#d8a6a4">Severe Complications</h1>
-        <ul class="w3-ul w3-hoverable w3-hover-dark-grey"><h4>
+        <ul class="w3-ul"><h4>
             <li>Pulmonary Vein Stenosis: <1%</li>
             <li>Persistent Phrenic Nerve Palsy: 1-2%</li>
             <li>Vascular Complications: 2-4%</li></h4>
@@ -285,7 +291,7 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
     </div>
     <div class="w3-card w3-cell w3-padding w3-mobile">
         <h1 style="color:#dac1c0">Unknown Significance</h1>
-        <ul class="w3-ul w3-hoverable w3-hover-dark-grey">
+        <ul class="w3-ul">
         <h4><li>Asymptomatic Cerebral Embolism: 5-20%</li>
             <li>Radiation Exposure</li></h4>
         </ul>
@@ -294,9 +300,10 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
             and 2016 ESC guidelines for AF.
         </p>
     </div>
+    <span class="pointer" style="display: none"></span>
 </div>
 
-<div class="w3-container darkG block" style="margin-top: 0;">
+<div class="w3-container darkG block" style="margin-top: 0;" onclick="pointer()">
     <div class="w3-bar w3-card-4 w3-center orangebg"><h1>Notable Complications</h1></div>
     <!--AE-->
     <div class="w3-row-padding w3-border-bottom">
@@ -364,6 +371,7 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
         </div>
         
         </div>
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--back button-->
@@ -379,6 +387,25 @@ background: linear-gradient(to right,#db6f6b 50%,#fc553d 100%)">
         atrial fibrillation ablation 2018 - <a href="https://apiyasawat.github.io/main/">https://apiyasawat.github.io/main/</a>
     </div>            
 </div>
+
+<script>
+        window.addEventListener("keydown", function(event) {
+            event.preventDefault();
+            if (event.keyCode===32) {
+            var p = document.getElementsByClassName("pointer");
+            p[0].style.display = "none";}
+        })
+        function pointer() {
+        var x = event.clientX;
+        var y = event.clientY;
+        var p = document.getElementsByClassName("pointer");
+        p[0].style.display = "inline";
+        p[0].style.left = x+"px"; 
+        p[0].style.top = y+"px";
+        
+    }
+    </script>
+
 
 </body>
 </html>
