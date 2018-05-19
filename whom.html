@@ -215,7 +215,7 @@ style="background: linear-gradient(to bottom, #fc553d 30%, #cc0000 100%); color:
 </div>
 
 <!--avn ablation-->
-<div class="w3-row-padding block darkG" style="margin-bottom: 0em">
+<div class="w3-row-padding block darkG" style="margin-bottom: 0em" onclick="pointer()">
     
     <div class="w3-container w3-padding w3-half w3-mobile">
         <h1 class="w3-panel w3-card orangebg">AV NODAL ABLATION</h1>
@@ -235,6 +235,7 @@ style="background: linear-gradient(to bottom, #fc553d 30%, #cc0000 100%); color:
     <div class="w3-container w3-half w3-mobile">
             <img src="figures/AVN abl tdp.png" style="width: 100%">
         </div>
+        <span class="pointer" style="display: none"></span>  
     </div>
     <div class="w3-container w3-padding w3-center w3-topbar darkG w3-mobile" style="margin-top: 0em">
     <h1 style="color: #fc553d">IMPORTANT </h1> 
@@ -253,7 +254,7 @@ style="background: linear-gradient(to bottom, #fc553d 30%, #cc0000 100%); color:
     <h5 style="text-align: center">Hutchinson MD. IBHRE Board Review Course 2012 and 
         2017 ABIM update in clinical cardiac electrophysiology.</h5>
 </div>   
-<div class="slideContainer">
+<div class="slideContainer" onclick="pointer()">
 <!--Q1-->
 <div class="slide">
     <div class="w3-container w3-xlarge">
@@ -394,6 +395,7 @@ style="background: linear-gradient(to bottom, #fc553d 30%, #cc0000 100%); color:
         <span class="dot" onclick="currentSlide(4)"></span> 
     </div>
 
+    <span class="pointer" style="display: none"></span>  
 </div>
 
 <!--conclusions-->
@@ -451,6 +453,20 @@ function showAnswer(a) {
     question = document.getElementById("answer"+a);
     question.style.visibility = "visible";
 }
+
+window.addEventListener("keydown", function(event) {
+        event.preventDefault();
+        if (event.keyCode===32) {
+        var p = document.getElementsByClassName("pointer");
+        p[0].style.display = "none";}
+    })
+    function pointer() {
+    var x = event.clientX;
+    var y = event.clientY;
+    var p = document.getElementsByClassName("pointer");
+    p[0].style.display = "inline";
+    p[0].style.left = x+"px"; 
+    p[0].style.top = y+"px";}
 
 </script>
 

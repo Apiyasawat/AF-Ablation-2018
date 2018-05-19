@@ -107,7 +107,7 @@
 </div>
 
 <!--rate vs rhythm-->
-<div class="w3-row w3-padding block" style="border: grey 0.5em solid;">
+<div class="w3-row w3-padding block" style="border: grey 0.5em solid;" onclick="pointer()">
     <div class="w3-container w3-third w3-mobile" style="margin-top: 1em">
         <h2 style="color: rgb(134, 134, 134)">
             AFFIRM and AF-CHF did not show the superiority of 
@@ -121,10 +121,11 @@
     <div class="w3-container w3-twothird w3-mobile">
         <img src="figures/AFFIRM onion.png" style="width: 100%; height: auto">
     </div>
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--thermocool af-->
-<div class="w3-row w3-padding block">
+<div class="w3-row w3-padding block" onclick="pointer()">
     <div class="w3-container w3-half w3-mobile">
         <img src="figures/thermocool af trial.png"
         style="width: 100%; height: auto">
@@ -156,10 +157,11 @@
                 </h4></div>
                 
         </div>
+        <span class="pointer" style="display: none"></span>
     </div>
 
 <!--RAFFT, Mantra-->    
-<div class="w3-row w3-padding orangebg block">
+<div class="w3-row w3-padding orangebg block" onclick="pointer()">
     <div class="w3-content w3-center">
     <h1 class="w3-dark-grey w3-card-4">Catheter Ablation as the first line treatment</h1>
         <h3 class="w3-card w3-grey">Data from RCTs supported the role of 
@@ -172,10 +174,11 @@
     <div class="w3-container w3-padding w3-card w3-white w3-cell w3-cell-middle w3-mobile">
         <img src="figures/MANTRA AF.png" style="width: 100%"; height="auto">
         </div>
+        <span class="pointer" style="display: none"></span>
 </div>
     
 <!--HFrEF meta-analysis-->
-<div class="w3-row block w3-teal">
+<div class="w3-row block w3-teal" onclick="pointer()">
     <div class="w3-container w3-cell w3-cell-middle w3-mobile">
         <h1 class="w3-padding orangebg">
             AF ABLATION in HFrEF
@@ -191,10 +194,11 @@
         <img src="figures/HFrEF mataanalysis.png" style="width: 100%">
 
     </div>
+    <span class="pointer" style="display: none"></span>
 </div>    
 
 <!--camera MRI-->
-<div class="w3-container block greenD">
+<div class="w3-container block greenD" onclick="pointer()">
     <div class="w3-panel w3-center w3-card-4 green">
         <h1>CAMERA-MRI </h1>
         <p>Prabhu et al. Catheter Ablation versus Medical Rate Control in 
@@ -238,10 +242,11 @@
         <h3>At 6 months, ablation SIGNIFICANTLY ↑LVEF by 18% (vs 4%); 58% had LVEF≥50%.</h3>
         <h3>The Absence of LGE on MRI was associated with greater improvement in LVEF.</h3>
     </div>
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--Castle AF-->
-<div class="w3-container block" style="margin-bottom: 0em;">
+<div class="w3-container block" style="margin-bottom: 0em;" onclick="pointer()">
     <div class="w3-container w3-center">
         <img src="figures/Castle AF/castleAF logo.png">
         <h5>CATHETER ABLATION versus standard  conventional 
@@ -318,7 +323,29 @@
         <span class="dot" onclick="currentSlide(3)"></span> 
         <span class="dot" onclick="currentSlide(4)"></span> 
     </div>
-    </div>  
+    </div>
+    <span class="pointer" style="display: none"></span>  
+</div>
+
+<!--CABANA-->
+<div class="w3-row w3-padding block" style="border: grey 0.5em solid;" onclick="pointer()">
+    <div class="w3-container w3-cell w3-center w3-mobile" style="margin-top: 1em">
+        <h1 style="font-weight: 900; text-align: center">CABANA Trial</h1>
+        <ul class="w3-ul w3-border w3-hoverable w3-xlarge">
+            <li>RCT, open-label, on catheter ablation for AF vs. drug therapy; N=2204. </li>
+            <li>No difference in composite primary endpoints of all-cause mortality, 
+                disabling stroke, serious bleeding, or cardiac arrest</li>
+            <li>Ablation reduced AF burden. Ablation was relatively safe. </li>
+            <li>27.5% crossed over from drug to ablation. On-treatment analysis favored ablation.</li>
+            <li>Age<65 and HF showed significant benefits from ablation.</li>
+        </ul>
+        
+        <p class="ref"> Packer et al. CABANA Trials. HRS 2018. </p>
+    </div>
+    <div class="w3-container w3-cell w3-center w3-mobile">
+        <img src="figures/CABANA.png" style="width: 100%; height: auto">
+    </div>
+    <span class="pointer" style="display: none"></span>
 </div>
 
 <!--to the whom session-->
@@ -414,6 +441,20 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   
 }
+
+window.addEventListener("keydown", function(event) {
+        event.preventDefault();
+        if (event.keyCode===32) {
+        var p = document.getElementsByClassName("pointer");
+        p[0].style.display = "none";}
+    })
+    function pointer() {
+    var x = event.clientX;
+    var y = event.clientY;
+    var p = document.getElementsByClassName("pointer");
+    p[0].style.display = "inline";
+    p[0].style.left = x+"px"; 
+    p[0].style.top = y+"px";}
 
 
 
