@@ -251,7 +251,7 @@ style="background: linear-gradient(to bottom, #fc553d 30%, #cc0000 100%); color:
 <!--Quiz-->
 <div class="w3-container w3-padding block">
     <div style="text-align: center"><h1>QUIZZES</h1></div>
-    <h5 style="text-align: center">Hutchinson MD. IBHRE Board Review Course 2012 and 
+    <h5 id="q" style="text-align: center">Hutchinson MD. IBHRE Board Review Course 2012 and 
         2017 ABIM update in clinical cardiac electrophysiology.</h5>
 </div>   
 <div class="slideContainer" onclick="pointer()">
@@ -445,7 +445,8 @@ function showSlides(n) {
   }
   
   slides[slideIndex-1].style.display = "block";
-  
+  var q = document.getElementById("q");
+  q.scrollIntoView(true);
 }
 
 //show answers in the quizzes
