@@ -256,7 +256,7 @@ style="background: linear-gradient(to bottom, #fc553d 30%, #cc0000 100%); color:
 </div>   
 <div class="slideContainer" onclick="pointer()">
 <!--Q1-->
-<div id="q" class="slide">
+<div class="slide">
     <div class="w3-container w3-xlarge">
         A 67-year-old man who has hypertension, complete heart block, and a dual-chamber pacemaker comes to the clinic for routine visit. 
         He feels well and reports no new problems. Current medications are metoprolol, lisinopril, and HCTZ. 
@@ -287,7 +287,7 @@ style="background: linear-gradient(to bottom, #fc553d 30%, #cc0000 100%); color:
     </div>
 </div>
 <!--Q2-->
-<div id="q" class="slide">
+<div class="slide">
     <div class="w3-container w3-xlarge">
             A 50-year-old man is scheduled to undergo radiofrequency catheter ablation today. 
             He has frequent episodes of paroxysmal AF and a history of 2 episodes of typical-appearing atrial flutter. 
@@ -429,10 +429,12 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+  
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
+  
 }
 
 function showSlides(n) {
@@ -445,8 +447,7 @@ function showSlides(n) {
   }
   
   slides[slideIndex-1].style.display = "block";
-  var q = document.getElementById("q");
-  q.scrollIntoView(true);
+  
 }
 
 //show answers in the quizzes
