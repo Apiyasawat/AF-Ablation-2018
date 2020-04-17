@@ -24,27 +24,18 @@
 .sans {font-family: 'Raleway', sans-serif;}
 
 /*color*/
+.orange {background-color: #fc553d;}
+.greenL {background-color: #eaefea;}
+.greenD {background-color: #bfcdc0;}
+.teal {background-color: #008080;}
 
-.barContainer {background: #f1f1f1;height: 6vh;width: 100%;position: sticky;top: 0;z-index:3;}
-.topBar a {text-decoration: none;font-size: 2.5vh;padding: 1.25vh 0.75vw;}
-.header {font-size: 3vh;padding:1vh 1.5vw 0.5vh 0;
-    color: #5a5a5a;border-right:#fafbfb solid 0.1vmax}
-.fbIcon {font-size: 2.5vh;padding:2.25vh 0.2vw 2.25vh 0.75vw}
-
-@media only screen and (max-width: 1200px) {
-    .header {font-size: 2vh;padding: 1vh 1.5vw}
-    .topBar a {font-size: 1.8vh;padding: 2vh 1.5vw}
-    .fbIcon {font-size: 1.8vh;padding: 2vh 0.5vw}
-}
-.for900 {display: none}
-@media only screen and (max-width:900px) {
-    .no900 {display: none}
-    .for900 {display: block}
-}
+.barContainer {background: #eaefea;height: 5vh;width: 100%;position: sticky;top: 0;z-index:3;color: #333;
+font-size: 2.5vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
 .block {
     margin: 3vh 0;position: relative;padding-top:6vh;
 }
+
 .blockHolder  {margin: 0 2vw;border-radius: 1vw;}
 .topic {padding:0.75vmax 0.5vmax 0.5vmax 0.75vmax}
 .eyebrow {height: 0.5vmax;width: 3vmax;background: linear-gradient(to right, #883240 0%, #bd102d 50%)}
@@ -54,9 +45,14 @@
 .headLine {color: #12151f;font-size: 2.8vmax;line-height: 120%;
 text-align: center}
 .imgHolder {max-height: 65vh;max-width: 98%}
+.mobileOnly {display: none;}
+
+
 @media only screen and (max-width:600px) {
     .blockHolder {margin: 0;border-radius: 0}
     .imgHolder {max-height: auto;max-width:100%}
+    .mobileOnly {display: block;}
+    .noMobile {display: none;}
 }
 .center {display: block;margin-left: auto;margin-right: auto;}
 .ref {font-size: 1vmax;color: #96a9ae;
@@ -86,64 +82,107 @@ line-height: 120%;margin-top: 0.5vh}
 
 <body style="font-family: 'Raleway', sans-serif;">
 
-<!--topBar>
-<div class="barContainer w3-center">
-    <span class="header" onclick="unblur()">
-        <a href="#top" style="text-decoration:none">AF Ablation</a></span>
-    <span class="topBar" onclick="unblur()">
-        <a href="#rate">Mechanism</a></span>
-    <span class="topBar" onclick="unblur()">
-        <a href="#rhythm">Technique</a></span>
-    <span class="topBar" onclick="unblur()">
-       <a href="#rfm">Evidence</a></span>
-    <span class="topBar" onclick="unblur()">
-        <a href="#rfm">Recommendations</a></span>
-    <span onclick="unblur()">
-        <a href="https://www.facebook.com/HeartRhythmBox/" title="@heartrhythmbox" target="_blank">
-            <i class="fab fa-facebook-square fbIcon" style="color: #3B5998;"></i></a>
-        <a href="https://heartrhythmbox.github.io/main/" title="Main Page" target="_blank">
-        <img src="box transparent.png" style="width:2.5vh;padding-bottom: 1vh"></a>
-    </span>
-        
-</div>-->
-
 <!--menu bar-->
-<div class="w3-bar w3-border w3-round w3-mobile">
-    <a href="#" class="w3-bar-item w3-button">Home - AF Ablation</a>
-    <a href="#" class="w3-bar-item w3-button">Mechanisms</a>
-    <a href="#" class="w3-bar-item w3-button">Techniques</a>
-    <a href="#" class="w3-bar-item w3-button">Evidences</a>
-    <a href="#" class="w3-bar-item w3-button">Recommendations</a>
-  </div>
+<div class="barContainer">
+    <span class="w3-dropdown-hover" onclick="unblur()" >
+    <i class="fas fa-bars" style="font-size: 2vh;padding: 1.5vh 1vw;
+        cursor: pointer;background-color:#eaefea"></i>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="font-size: 2vh">
+            <a href="#mech" class="w3-bar-item w3-button w3-border">Mechanisms</a>
+            <a href="#tech" class="w3-bar-item w3-button w3-border">Techniques</a>
+            <a href="#evidence" class="w3-bar-item w3-button w3-border">Evidences</a>
+            <a href="#rec" class="w3-bar-item w3-button w3-border">Recommendations</a>
+        </div>
+    </span>
+    <span class="noMobile" onclick="unblur()">
+        <a href="#top" style="text-decoration:none;">
+            Catheter Ablation for Atrial Fibrillation</a></span>
+    <span class="w3-right" style="padding-right: 1.5vh" onclick="unblur()">
+        <a href="https://heartrhythmbox.com/" title="Main Page" target="_blank">
+        <img src="box transparent.png" style="width:3vh;padding-top: 0.5vh;"></a>
+    </span>
+</div>
 
 
 <!--intro-->
-<div class="block" style="padding-top:none">
-    <div class="w3-row blockHolder" style="background: black;padding: 3vmax 0vmax">
-    <div class="w3-cell w3-cell-middle w3-mobile">
-            <video width="100%" height="auto" autoplay muted loop>
-                <source src="media/AF LAT.mp4" type="video/mp4">
-            </video>
-    </div>
-    <div class="w3-cell w3-padding w3-cell-middle w3-mobile">
-        <img src="media/AF EGM.jpg" style="width: 100%;" class="w3-sepia">
-        <img src="media/AF RVR in CHF.jpg" style="width: 100%" class="w3-sepia">
-        <div class="w3-container" style="text-align: right;padding-top: 2vh">
-            <div class="w3-row wideFont pink" style="font-size: 3.5vmax;">
-                Atrial Fibrillation</div>
-            <div class="w3-row sans" style="font-size: 2vmax;color: #b8b8b8">
-                rate control | rhythm control | risk factors modification
-            <br>
-            <a href="https://www.facebook.com/HeartRhythmBox/" title="@heartrhythmbox" target="_blank"
-                style="text-decoration:none;font-size: 1.5vmax" class="blue">
-            <i class="fab fa-facebook-square blue" style="font-size: 1.5vmax"></i>
-            HeartRhythmBox
+<div class="block" style="padding-top:none;text-align: center;margin: 0;">
+    
+    <!--large screen-->
+    <div class="blockHolder noMobile" style="
+    background-image: url('media/title_land.png');background-size: cover;background-position: center;background-repeat: no-repeat;">
+       
+        <ul class="w3-ul" style="max-width: 900px;margin-left: auto;margin-right: auto;padding:5vmax 2vmax 3vmax 2vmax;">
+            <li class="w3-bold w3-round-large" 
+            style="font-size: 3.5vmax;color:white;background-color: rgba(252,85,61,0.8);">
+            Catheter Ablation for AF</li>            
+        </ul>
+        <ul class="w3-ul" style="max-width: 900px;margin-left: auto;margin-right: auto;padding:2vmax 2vmax">
+            <a href="#mech" style="text-decoration: none;">
+            <li class="w3-hover-black" style="font-size: 2.5vmax;color: white;background-color: rgba(0,0,0,0.7);border-bottom: #797979 solid 0.1vmax;">
+            Mechanisms
+            </li></a>
+            <a href="#tech" style="text-decoration: none;">
+            <li class="w3-hover-black" style="font-size: 2.5vmax;color: white;background-color: rgba(0,0,0,0.7);border-bottom: #797979 solid 0.1vmax;">
+            Techniques
+            </li></a>
+            <a href="#evidence" style="text-decoration: none;">
+            <li class="w3-hover-black" style="font-size: 2.5vmax;color: white;background-color: rgba(0,0,0,0.7);border-bottom: #797979 solid 0.1vmax;">
+                Evidences
+            </li></a>
+            <a href="#rec" style="text-decoration: none;">
+            <li class="w3-hover-black" style="font-size: 2.5vmax;color: white;background-color: rgba(0,0,0,0.7);">
+                Recommendations
+            </li></a>
+        </ul>
+
+        <div style="padding: 2vmax;text-align: center;color: #ddd;font-size: 1.8vmax;">
+            <a href="https://heartrhythmbox.com/" title="Main Page" target="_blank" style="text-decoration: none;">
+                <img src="box transparent.png" style="width:2vmax;padding-top: 0.5vh;">
+                www.heartRhythmBox.com
             </a>
-            </div>
         </div>
+            
     </div>
+
+    <!--mobile-->
+    <div class="blockHolder mobileOnly" 
+    style="background-image: url('media/title_portrait.png');background-size: 100%;background-position: center;">
+       
+        <ul class="w3-ul" style="margin-left: auto;margin-right: auto;padding:12vmax 2vmax 5vmax 2vmax;">
+            <li class="w3-bold w3-round-large" 
+            style="font-size: 3.5vmax;color:white;background-color: rgba(252,85,61,0.8);">
+            Catheter Ablation for AF</li>            
+        </ul>
+        <ul class="w3-ul" style="margin-left: auto;margin-right: auto;padding:3vmax 2vmax">
+            <a href="#mech" style="text-decoration: none;">
+            <li class="w3-hover-black" style="font-size: 2.5vmax;color: white;background-color: rgba(0,0,0,0.7);border-bottom: #797979 solid 0.1vmax;">
+            Mechanisms
+            </li></a>
+            <a href="#tech" style="text-decoration: none;">
+            <li class="w3-hover-black" style="font-size: 2.5vmax;color: white;background-color: rgba(0,0,0,0.7);border-bottom: #797979 solid 0.1vmax;">
+            Techniques
+            </li></a>
+            <a href="#evidence" style="text-decoration: none;">
+            <li class="w3-hover-black" style="font-size: 2.5vmax;color: white;background-color: rgba(0,0,0,0.7);border-bottom: #797979 solid 0.1vmax;">
+                Evidences
+            </li></a>
+            <a href="#rec" style="text-decoration: none;">
+            <li class="w3-hover-black" style="font-size: 2.5vmax;color: white;background-color: rgba(0,0,0,0.7);">
+                Recommendations
+            </li></a>
+        </ul>
+
+        <div style="padding: 3vmax;text-align: center;color: #ddd;font-size: 1.8vmax;">
+            <a href="https://heartrhythmbox.com/" title="Main Page" target="_blank" style="text-decoration: none;">
+                <img src="box transparent.png" style="width:2vmax;padding-top: 0.5vh;">
+                www.heartRhythmBox.com
+            </a>
+        </div>
+            
     </div>
     
+</div>
+  
 </div>
 
 <!--pointer-->
