@@ -38,13 +38,13 @@ font-size: 2.5vh;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0
 
 .blockHolder  {margin: 0 2vw;border-radius: 1vw;}
 .topic {padding:0.75vmax 0.5vmax 0.5vmax 0.75vmax}
-.eyebrow {height: 0.5vmax;width: 3vmax;background: linear-gradient(to right, #883240 0%, #bd102d 50%)}
-.topicTxt {font-size: 2vmax;color: #96a9ae;line-height: 120%}
-.topicTxt :first-child {color:#883240}
-.topicTxt :last-child {color: #bd102d}
+.eyebrow {height: 0.5vmax;width: 3vmax;background: linear-gradient(to right, #7e2a1e, #fc553d)}
+.topicTxt {font-size: 2vmax;color: #bfcdc0;line-height: 120%}
+.topicTxt :first-child {color:#7e2a1e}
+.topicTxt :last-child {color: #fc553d}
 .headLine {color: #12151f;font-size: 2.8vmax;line-height: 120%;
 text-align: center}
-.imgHolder {max-height: 65vh;max-width: 98%}
+.imgHolder {max-height: 65vh;max-width: 98%;}
 .mobileOnly {display: none;}
 
 
@@ -55,7 +55,7 @@ text-align: center}
     .noMobile {display: none;}
 }
 .center {display: block;margin-left: auto;margin-right: auto;}
-.ref {font-size: 1vmax;color: #96a9ae;
+.ref {font-size: 1vmax;color: #96a9ae;padding-left: 1vmax;
 line-height: 120%;margin-top: 0.5vh}
 .content {font-size:1.8vmax;line-height: 130%}
 
@@ -190,38 +190,89 @@ line-height: 120%;margin-top: 0.5vh}
 
 <!--rate control-->
 <div class="w3-row" id="rate"></div>
-<!--rate/why1-->
+<!--mechanism 1-->
 <div class="block">
-    <div class="blockHolder lightBlue">
+    <div class="blockHolder greenL">
         <div class="w3-row topic">
             <div class="eyebrow"></div>  
             <div class="topicTxt">
-                <span>rate control</span>
-                <span>&#8765;&thinsp;</span><span class="w3-wide">why</span>
+                <span>Mechanisms</span>
+                <span>&nbsp;1/x</span>
             </div>
         </div>
-        <div class="w3-row w3-center w3-white w3-padding" style="margin: 0 0.5vw;">
-        <div class="w3-col w3-center s5 w3-padding">
-            <img src="media/rate/AF pressure tracing.jpg" style="width:100%">
+        <div style="text-align: center;">
+            <img src="media/AFallMechanisms.png" class="imgHolder">
         </div>
-        <div class="w3-col w3-center s7 w3-padding">
-            <img src="media/rate/AF hemodynamic.png" style="width:100%"></div>
-        </div>
-        <div class="w3-row">
-            <div class="w3-cell w3-padding w3-cell-middle headLine darkRed" 
-            style="font-size:3vmax;text-align: left;line-height: 100%">
-                <span class="w3-wide red">Rate</span><br>Control</div>
-            <div class="w3-cell w3-padding sans blue2 w3-cell-middle" style="font-size:2vmax">
-                ..reduces symptoms and improves hemodynamic.<br>
-                ..is an essential therapy of AF regardless of whether rhythm or rate control strategy is chosen.
+        <div class="w3-row w3-padding">
+            <div class="w3-cell w3-padding w3-cell-middle headLine orange" 
+            style="font-size:3vmax;text-align: left;line-height: 100%;color: white;">
+                <span class="w3-wide">Mechanisms</span><br>of AF</div>
+            <div class="w3-cell w3-padding sans w3-cell-middle" style="font-size:2vmax">
+                .. is all of the above.<br>
+                .. from triggers to reentry, from electrical to structural remodelling.
             </div>
         </div>
-        
-        <div class="ref w3-center">
-            <a href="https://www.sciencedirect.com/science/article/pii/S0002914902033738?via%3Dihub#BIB35" 
-            target="_blank">
-                Maisel and Stevension. Am J Cardiol. 2003 Mar 20;91(6A):2D-8D.</a>
+                
+    </div>
+    
+</div>
+
+<!--mechanism 2-->
+<div class="block">
+    <div class="blockHolder greenD">
+        <div class="w3-row topic">
+            <div class="eyebrow"></div>  
+            <div class="topicTxt">
+                <span>Mechanisms</span>
+                <span>&nbsp;2/x</span>
+            </div>
         </div>
+        <div class="w3-cell-row w3-mobile center">
+            <div class="w3-cell w3-padding w3-cell-middle w3-mobile">
+                <img src="media/PVSleeves.png" class="imgHolder">
+            </div>
+            <div class="w3-cell w3-padding w3-cell-middle w3-mobile">
+                <img src="media/PVFoci.png" class="imgHolder">
+            </div>
+        </div>
+        <div class="w3-row w3-padding content center">
+            - Focal source, mostly from pulmonary veins, can initiate AF.<br>
+            - Mechanisms include trigger and localized reentry.<br>
+            - This focal source is more involved in driving AF in paroxysmal > persistent types.   
+        </div>
+        <div class="ref">
+            <a href="https://www.nejm.org/doi/full/10.1056/NEJM199809033391003">Haïssaguerre, M. NEJM 1998;339:659-66 </a>and
+            <a href="https://www.ahajournals.org/doi/abs/10.1161/01.cir.34.3.412">
+                Nathan, H. Circulation 1966;34;412-422.
+            </a>
+        </div>
+                
+    </div>
+    
+</div>
+
+<!--mechanism 3-->
+<div class="block">
+    <div class="blockHolder greenD">
+        <div class="w3-row topic">
+            <div class="eyebrow"></div>  
+            <div class="topicTxt">
+                <span>Mechanisms</span>
+                <span>&nbsp;3/x</span>
+            </div>
+        </div>
+        <img src="media/Electrical Remodelling.jpg" class="imgHolder center">
+        <div class="headlines">Electrical Remodeeling</div>
+        <div class="w3-row w3-padding content center">
+            - Focal source, mostly from pulmonary veins, can initiate AF.<br>
+            - Mechanisms include trigger and localized reentry.<br>
+            - This focal source is more involved in driving AF in paroxysmal > persistent types.   
+        </div>
+        <div class="ref">
+            <a href="https://www.nejm.org/doi/full/10.1056/NEJM199809033391003">Haïssaguerre, M. NEJM 1998;339:659-66 </a>and
+            
+        </div>
+                
     </div>
     
 </div>
@@ -297,4 +348,3 @@ function unblur() {
 
 
 </body>
-</html>
