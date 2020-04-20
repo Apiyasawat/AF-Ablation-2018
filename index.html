@@ -17,7 +17,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <style>
 /*fonts*/
@@ -85,9 +85,10 @@ line-height: 120%;margin-top: 0.5vh}
 <!--menu bar-->
 <div class="barContainer">
     <span class="w3-dropdown-hover" onclick="unblur()" >
-    <i class="fas fa-bars" style="font-size: 2vh;padding: 1.5vh 1vw;
-        cursor: pointer;background-color:#eaefea"></i>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4" style="font-size: 2vh">
+    <span class="material-icons w3-bold" style="font-size: 2.2vh;padding: 1.2vh 1vw;
+    cursor: pointer;background-color:#eaefea">
+            menu</span>
+           <div class="w3-dropdown-content w3-bar-block w3-card-4" style="font-size: 2vh">
             <a href="#mech" class="w3-bar-item w3-button w3-border">Mechanisms</a>
             <a href="#tech" class="w3-bar-item w3-button w3-border">Techniques</a>
             <a href="#evidence" class="w3-bar-item w3-button w3-border">Evidences</a>
@@ -293,10 +294,10 @@ line-height: 120%;margin-top: 0.5vh}
         <span style="text-align: justify;color:#fc553d;font-size: 4vmax;">"Cracks" </span> 
         <span style="font-size: 2.5vmax;">in the atrial wall</span>
         <h2 style="color: lightcyan;">External stressors, such as structural heart disease, HTN, or AF itself, induce 
-            <span style="font-weight: 900"> STRUCTURAL REMODELLING.</span></h2>
+            <span style="font-weight: 700"> STRUCTURAL REMODELLING.</span></h2>
         <p style="line-height: 0.5"></p>
         <h2 style="color: lightyellow;">Structural remodelling results in 
-            <span style="font-weight: 900"> ELECTRICAL DISSOCIATION </span> favoring reentry 
+            <span style="font-weight: 700"> ELECTRICAL DISSOCIATION </span> favoring reentry 
             and perpetuation of AF.</h2>
         <div class="ref w3-padding">
             <a href="https://www.ahajournals.org/doi/full/10.1161/CIRCEP.109.910125" target="_blank">
@@ -531,6 +532,96 @@ line-height: 120%;margin-top: 0.5vh}
             </div>
         </div>
                
+                
+    </div>
+    
+</div>
+
+<!--tech 5-->
+<div class="block">
+    <div class="blockHolder" style="background-color: #008080;" >
+        <div class="w3-row topic">
+            <div class="eyebrow"></div>  
+            <div class="topicTxt">
+                <span style="color:#fd4f34">Techniques</span>
+                <span>&nbsp;5/6</span>
+            </div>
+        </div>
+
+        <div class="headLine orange w3-text-white">Perioperative Anticoagulation(I/II)</div>
+        <div class="w3-row w3-padding w3-mobile">
+            <div class="w3-cell w3-cell-middle w3-mobile">
+                <img src="media/unintWarfarin.jpg" class="imgHolder">
+            </div>
+            <div class="w3-cell w3-cell-middle w3-mobile">
+                <img src="media/unintNOACs.png" class="imgHolder">
+            </div>
+        </div>
+        <div class="content w3-padding" style="color: white;">
+            Uninterrupted OACs, either VKA or NOACs, is recommended, presumed that the patient has been therapeutically anticoagulated.
+        </div>
+        <div class="ref">
+            <a href="https://doi.org/10.1161/CIRCULATIONAHA.113.006426" target="_blank">
+            Di Biase et al. Circulation 2014
+            </a> and
+            <a href="https://doi.org/10.1093/eurheartj/ehz190" target="_blank">
+            Hahnloser et al. Eur Heart J 2019.
+            </a>
+        </div>
+        
+                
+    </div>
+    
+</div>
+
+
+<!--tech 6-->
+<div class="block">
+    <div class="blockHolder" style="background-color: #008080;" >
+        <div class="w3-row topic">
+            <div class="eyebrow"></div>  
+            <div class="topicTxt">
+                <span style="color:#fd4f34">Techniques</span>
+                <span>&nbsp;6/6</span>
+            </div>
+        </div>
+        <div class="headLine orange w3-text-white">Perioperative Anticoagulation(II/II)</div>
+        <table style="padding: 1vmax;margin-left: auto;margin-right: auto;">
+            <tr class="w3-padding" style="font-size: 2vmax;background-color: beige;">
+                <td class="w3-padding" style="font-weight: 700;">Pre-Ablation</td>
+                <td class="w3-padding">
+                    <ul style="margin: 0;">
+                        <li>Uninterrupted OACs is recommended.</li>
+                        <li>TEE before ablation is reasonable.</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="w3-padding" style="font-size: 2vmax;background-color:slategray;color: white;">
+                <td class="w3-padding" style="font-weight: 700;">During Ablation</td>
+                <td class="w3-padding">
+                    <ul style="margin: 0;">
+                    <li>
+                    Heparin prior to or immediately following transeptal puncture for ACT &ge;300s is recommended.
+                    </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr class="w3-padding" style="font-size: 2vmax;color: whitesmoke;background-color:darkslategray;">
+                <td class="w3-padding" style="font-weight: 700;">Post-Ablation</td>
+                <td class="w3-padding">
+                    <ul style="margin: 0;">
+                        <li>OACs for at least 2 months post ablation is recommended.</li>
+                        <li>Decisions regarding continuation of systemic anticoagulation &gt;2 months post ablation should be based on the patient's stroke risk profile and not on the perceived success or failure of the ablation procedure.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <div class="ref">
+            <a href="https://www.clinicalkey.com/#!/content/playContent/1-s2.0-S1547527117305908?scrollTo=%23tbl4"
+            target="_blank">
+            2017 HRS/EHRA/ECAS/APHRS/SOLAECE expert consensus statement on catheter and surgical ablation of atrial fibrillation.
+            </a>
+        </div>
                 
     </div>
     
