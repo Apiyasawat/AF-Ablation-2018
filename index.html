@@ -981,7 +981,8 @@ line-height: 120%;margin-top: 0.5vh}
             <li>Schedule a follow-up in 6 months.</li>
         </ol>
         <div onclick="showAnswer(0)" style="font-size: 1.8vmax;color: #333;">
-            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey"><h4>Show Answer</h4></button>
+            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey answerButton">
+                Show Answer</button>
             <div class="answer" >
             The Answer is <b>C</b><br>
             OAC should be initated base on the device detected AF episodes
@@ -1019,7 +1020,8 @@ line-height: 120%;margin-top: 0.5vh}
             <li>Reschedule the procedure.</li>
         </ol>
         <div onclick="showAnswer(1)" style="font-size: 1.8vmax;color: #333;">
-            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey"><h4>Show Answer</h4></button>
+            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey answerButton">
+                Show Answer</button>
             <div class="answer" >
             The Answer is <b>B</b><br>
             Current evidence supported the safety and superiority of
@@ -1038,11 +1040,11 @@ line-height: 120%;margin-top: 0.5vh}
             <div class="eyebrow"></div>  
             <div class="topicTxt">
                 <span>Quiz</span>
-                <span>&nbsp;2/4</span>
+                <span>&nbsp;3/4</span>
             </div>
         </div>
     <div class="w3-container" style="font-size: 2vmax;padding: 2vmax;">
-        A 48 yo M calls your office 10 days after an uncomplicated Afib ablation complaining of a recent
+        A 48 year-old man calls your office 10 days after an uncomplicated Afib ablation complaining of a recent
         onset of fevers, mild chest pain, and difficulty swallowing. <br>
         What do you recommend?
        
@@ -1054,7 +1056,8 @@ line-height: 120%;margin-top: 0.5vh}
             <li>Consult GI.</li>
         </ol>
         <div onclick="showAnswer(2)" style="font-size: 1.8vmax;color: #333;">
-            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey"><h4>Show Answer</h4></button>
+            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey answerButton">
+                Show Answer</button>
             <div class="answer" >
             The Answer is <b>D</b><br>
             The patient had classic Triads of atrioesophageal (AE) fistula (fever, chest pain, and dysphagia) that occurred 1-4wks after AF ablation. AE fistula posts 
@@ -1073,7 +1076,7 @@ line-height: 120%;margin-top: 0.5vh}
             <div class="eyebrow"></div>  
             <div class="topicTxt">
                 <span>Quiz</span>
-                <span>&nbsp;2/4</span>
+                <span>&nbsp;4/4</span>
             </div>
         </div>
     <div class="w3-container" style="font-size: 2vmax;padding: 2vmax;">
@@ -1096,7 +1099,7 @@ line-height: 120%;margin-top: 0.5vh}
             <li>Recommend catheter ablation.</li>
         </ol>
         <div onclick="showAnswer(3)" style="font-size: 1.8vmax;color: #333;">
-            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey"><h4>Show Answer</h4></button>
+            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey answerButton">Show Answer</button>
             <div class="answer" >
             The Answer is <b>D</b><br>
             Symptomatic paroxysmal AF, failed flecainide --> catheter ablation is indicated as 
@@ -1204,10 +1207,16 @@ function unblur() {
 
 function showAnswer(n){
     var answer = document.getElementsByClassName('answer')
-    for (i=0;i<answer.length;i++){
-        answer[i].style.visibility = "hidden"
+    var ansB = document.getElementsByClassName('answerButton')
+
+    //toggle visibility
+    if (answer[n].style.visibility == "visible") {
+        answer[n].style.visibility = "hidden"
+        ansB[n].innerHTML = "Show Answer"
+    } else {
+        answer[n].style.visibility = "visible"
+        ansB[n].innerHTML = "Hide Answer"
     }
-    answer[n].style.visibility = "visible"
 }
 
 
