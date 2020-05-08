@@ -937,11 +937,11 @@ line-height: 120%;margin-top: 0.5vh}
         <div class="w3-teal w3-padding-large" style="font-size: 3.5vmax;">
             Atrioventricular Nodal Ablation
         </div>
-        <ul style="font-size: 2.5vmax;">
-                <li class="greenL w3-padding w3-border-bottom w3-border-white">Serves as the last resource for those who were UNREPONSIVE or INTOLERANT to INTENSIVE rate/rhythm control (IIa).</li>
-                <li class="greenL w3-padding w3-border-bottom w3-border-white">Remember that the patients will become PACEMAKER-dependent.</li>
-                <li class="greenL w3-padding w3-border-bottom w3-border-white">Consider CRT, rather than a simple pacemaker, in those with impaired LVEF.</li>
-                <li class="greenL w3-padding w3-border-bottom w3-border-white">To avoid ventricular arrhythmias post AV nodal ablation, the inital pacing rate should be set at 70-90 bpm.</li>
+        <ul style="font-size: 2.5vmax;list-style-position: inside;">
+                <li class="greenL w3-padding w3-border-bottom w3-border-white w3-hover-blue-grey">Serves as the last resource for those who were UNREPONSIVE or INTOLERANT to INTENSIVE rate/rhythm control (IIa).</li>
+                <li class="greenL w3-padding w3-border-bottom w3-border-white w3-hover-blue-grey">Remember that the patients will become PACEMAKER-dependent.</li>
+                <li class="greenL w3-padding w3-border-bottom w3-border-white w3-hover-blue-grey">Consider CRT, rather than a simple pacemaker, in those with impaired LVEF.</li>
+                <li class="greenL w3-padding w3-border-bottom w3-border-white w3-hover-blue-grey">To avoid ventricular arrhythmias post AV nodal ablation, the inital pacing rate should be set at 70-90 bpm.</li>
         </ul>
         <div class="ref">
             <a href="https://doi.org/10.1093/eurheartj/ehw210" target="_blank">
@@ -981,7 +981,7 @@ line-height: 120%;margin-top: 0.5vh}
             <li>Schedule a follow-up in 6 months.</li>
         </ol>
         <div onclick="showAnswer(0)" style="font-size: 1.8vmax;color: #333;">
-            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey answerButton">
+            <button class="w3-button w3-round-large w3-padding-small greenL answerButton">
                 Show Answer</button>
             <div class="answer" >
             The Answer is <b>C</b><br>
@@ -1020,7 +1020,7 @@ line-height: 120%;margin-top: 0.5vh}
             <li>Reschedule the procedure.</li>
         </ol>
         <div onclick="showAnswer(1)" style="font-size: 1.8vmax;color: #333;">
-            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey answerButton">
+            <button class="w3-button w3-round-large w3-padding-small greenL answerButton">
                 Show Answer</button>
             <div class="answer" >
             The Answer is <b>B</b><br>
@@ -1056,7 +1056,7 @@ line-height: 120%;margin-top: 0.5vh}
             <li>Consult GI.</li>
         </ol>
         <div onclick="showAnswer(2)" style="font-size: 1.8vmax;color: #333;">
-            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey answerButton">
+            <button class="w3-button w3-round-large w3-padding-small greenL answerButton">
                 Show Answer</button>
             <div class="answer" >
             The Answer is <b>D</b><br>
@@ -1099,7 +1099,7 @@ line-height: 120%;margin-top: 0.5vh}
             <li>Recommend catheter ablation.</li>
         </ol>
         <div onclick="showAnswer(3)" style="font-size: 1.8vmax;color: #333;">
-            <button class="w3-button w3-round-large w3-border w3-padding-small w3-light-grey answerButton">Show Answer</button>
+            <button class="w3-button w3-round-large w3-padding-small greenL answerButton">Show Answer</button>
             <div class="answer" >
             The Answer is <b>D</b><br>
             Symptomatic paroxysmal AF, failed flecainide --> catheter ablation is indicated as 
@@ -1176,13 +1176,17 @@ window.addEventListener("keydown", function(event) {
 window.addEventListener("keydown", function(event) {
     event.preventDefault();
     if (event.keyCode===38) {
-    blockNav(-1)}
+        var p = document.getElementsByClassName("pointer");
+        p[0].style.display = "none";
+        blockNav(-1)}
 })
 //down arrow
 window.addEventListener("keydown", function(event) {
     event.preventDefault();
     if (event.keyCode===40) {
-    blockNav(1)}
+        var p = document.getElementsByClassName("pointer");
+        p[0].style.display = "none";
+        blockNav(1)}
 })
 
 window.ontouchmove = function () {unblur()};
